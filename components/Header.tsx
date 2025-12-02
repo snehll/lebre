@@ -15,17 +15,17 @@ export default function Header() {
       animate={{ y: 0 }}
       className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="container mx-auto flex h-16 items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="relative w-8 h-8">
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative w-10 h-10">
             <Image
-              src="/logo.png"
-              alt="QUANTUM EUROPE"
+              src="/logo-lebre.png"
+              alt="LEBRE"
               fill
               className="object-contain"
             />
           </div>
-          <span className="text-xl font-light text-slate-900">
-            QUANTUM EUROPE
+          <span className="text-2xl font-bold text-teal-400 hidden sm:block">
+            LEBRE
           </span>
         </Link>
 

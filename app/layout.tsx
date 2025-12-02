@@ -10,25 +10,24 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "QUANTUM EUROPE Sp. z o.o. | Trade Without Borders",
-    template: "%s | QUANTUM EUROPE",
+    default: "LEBRE | Efficient Industrial Trade",
+    template: "%s | LEBRE",
   },
   description:
-    "Warsaw-based coordinator of seamless industrial trade across Europe and beyond.",
-  keywords:
-    "industrial logistics, heavy transport, Poland trade, QUANTUM EUROPE",
+    "Trabzon & Warsaw — coordinating seamless industrial trade across Europe and beyond.",
   openGraph: {
-    title: "QUANTUM EUROPE Sp. z o.o.",
-    description: "Trade without borders from Poland.",
-    url: "https://quantum-eur.pl",
-    siteName: "QUANTUM EUROPE",
-    images: ["/og-image.jpg"],
-    emails: ["witamy@quantum-eur.pl"],
+    title: "LEBRE TİCARET LİMİTED ŞİRKETİ",
+    description:
+      "Efficient trade starts with clear communication, reliable partners, and transparent logistics.",
+    url: "https://lebre.com.tr",
+    siteName: "LEBRE",
+    images: ["/og-lebre.jpg"],
+    emails: ["ofis@lebre.com.tr"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#10b981", // Emerald green
+  themeColor: "#0d9488", // Deep teal
 };
 
 export default function RootLayout({

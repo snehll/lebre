@@ -1,62 +1,35 @@
-// src/components/Hero.tsx
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { categories } from "@/constant";
-
-const images = categories.map((it) => it.img);
 
 export default function Hero() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Blurred + Fading Background */}
       <div className="absolute inset-0">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.8, ease: "easeInOut" }}
-            className="absolute inset-0">
-            <Image
-              src={images[currentIndex]}
-              alt="Industrial logistics"
-              fill
-              className="object-cover blur-sm scale-105" // ← blur + slight zoom = dreamy effect
-              quality={90}
-              priority
-            />
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Stronger dark overlay + subtle gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+        <div className="absolute inset-0 bg-linear-to-br from-teal-950 via-black to-teal-950" />
+        <motion.div
+          animate={{ x: [0, 100, 0], y: [0, -100, 0] }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+          className="absolute -top-40 -left-40 w-96 h-96 bg-teal-600/20 rounded-full blur-3xl"
+        />
+        <motion.div
+          animate={{ x: [0, -120, 0], y: [0, 80, 0] }}
+          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          className="absolute -bottom-40 -right-40 w-96 h-96 bg-teal-700/20 rounded-full blur-3xl"
+        />
       </div>
 
-      {/* Content — now super sharp */}
       <div className="relative container mx-auto px-6 text-center z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}>
-          <h1 className="text-5xl md:text-7xl font-light text-white mb-6 leading-tight drop-shadow-2xl">
-            Trade without
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+            Efficient trade starts with
             <br />
-            <span className="font-bold text-emerald-400 drop-shadow-2xl">
-              borders.
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-cyan-400">
+              clear communication.
             </span>
           </h1>
 
@@ -64,9 +37,9 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-xl md:text-2xl text-white/95 mb-12 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-xl">
-            We help industrial companies move products, equipment, and
-            technology seamlessly across Europe and beyond.
+            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-5xl mx-auto font-light leading-relaxed">
+            Reliable partners and transparent logistics — from Trabzon & Warsaw
+            to the world.
           </motion.p>
 
           <motion.div
@@ -77,31 +50,18 @@ export default function Hero() {
             <Button
               asChild
               size="lg"
-              className="px-12 py-7 bg-emerald-600 hover:bg-emerald-500 text-white text-lg font-light shadow-2xl backdrop-blur">
+              className="px-12 py-7 bg-teal-600 hover:bg-teal-500 text-white text-lg font-medium shadow-2xl">
               <Link href="/contact">Get in Touch</Link>
             </Button>
             <Button
               asChild
               size="lg"
               variant="outline"
-              className="px-12 py-7 border-2 border-white text-white bg-transparent hover:bg-white/20 backdrop-blur text-lg font-light">
+              className="px-12 py-7 border-2 border-teal-400 text-teal-400 hover:bg-teal-400/10 text-lg font-medium">
               <Link href="/services">Our Services</Link>
             </Button>
           </motion.div>
         </motion.div>
-      </div>
-
-      {/* Clean dots */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentIndex(i)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              i === currentIndex ? "bg-emerald-400 w-10" : "bg-white/70"
-            }`}
-          />
-        ))}
       </div>
     </section>
   );

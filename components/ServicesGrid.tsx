@@ -7,7 +7,6 @@ import {
   Globe,
   Package,
   Warehouse,
-  ArrowRight,
 } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
@@ -65,18 +64,17 @@ export default function ServicesGrid() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <AnimatedSection key={i}>
-              <Card className="h-full border border-slate-200 bg-white hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+              <Card className="h-full border border-teal-900/50 bg-zinc-900/95 hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-500/20 transition-all duration-500">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-emerald-50 flex items-center justify-center mb-4">
-                    <service.icon className="w-8 h-8 text-emerald-600" />
+                  <div className="w-14 h-14 rounded-full bg-linear-to-br from-teal-600 to-teal-700 flex items-center justify-center mb-4">
+                    <service.icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-2xl text-slate-900">
+                  <CardTitle className="text-2xl text-teal-400">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-600 text-lg">{service.desc}</p>
-                  <ArrowRight className="w-5 h-5 text-emerald-600 mt-4 opacity-0 group-hover:opacity-100 transition" />
+                  <p className="text-gray-300 text-lg">{service.desc}</p>
                 </CardContent>
               </Card>
             </AnimatedSection>

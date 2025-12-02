@@ -26,10 +26,11 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-xl md:text-2xl text-white/95 max-w-4xl mx-auto font-light leading-relaxed drop-shadow-lg">
-            Our Polish office acts as a central hub for trade coordination in
-            the EU region. We manage procurement, supply, and distribution for
-            industrial clients, focusing on compliance, documentation, and
-            operational transparency.
+            We work with industrial producers and distributors across Europe,
+            providing professional trade management for international projects.
+            From negotiating supplier terms to coordinating multimodal
+            transport, we handle every detail so our clients can focus on their
+            business goals.
           </p>
         </div>
       </section>

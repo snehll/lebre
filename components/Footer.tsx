@@ -61,13 +61,13 @@ export default function Footer() {
                   Privacy Policy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/privacy-policy"
                   className="text-muted-foreground hover:text-primary">
                   Terms of Service
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>

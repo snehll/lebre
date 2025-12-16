@@ -18,7 +18,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-10 h-10">
             <Image
-              src="/logo-lebre.png"
+              src="logo.png"
               alt="LEBRE"
               fill
               className="object-contain"

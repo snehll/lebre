@@ -30,14 +30,11 @@ export default function ContactPage() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-semibold mb-4">
-                  MICROMEGAS Sp. z o.o.
+                  LEBRE TİCARET LİMİTED ŞİRKETİ
                 </h3>
                 <p className="text-muted-foreground">
-                  Plac Bankowy 2, lok. 1309
                   <br />
-                  00-095 Warszawa, Poland
-                  <br />
-                  Email: info@micro-megas.com
+                  Email: ofis@lebre.com.tr
                 </p>
               </div>
               <div>

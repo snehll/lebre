@@ -64,7 +64,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/terms-of-use"
-                  className="text-gray-400 hover:text-red-400">
+                  className="text-muted-foreground hover:text-primary">
                   User Agreement
                 </Link>
               </li>

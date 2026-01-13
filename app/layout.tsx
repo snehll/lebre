@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | LEBRE",
   },
   description:
-    "Trabzon & Warsaw — coordinating seamless industrial trade across Europe and beyond.",
+    "Trabzon , Turkey — coordinating seamless industrial trade across Europe and beyond.",
   openGraph: {
     title: "LEBRE TİCARET LİMİTED ŞİRKETİ",
     description:

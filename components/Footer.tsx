@@ -74,7 +74,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <p className="text-sm text-muted-foreground space-y-2">
               <span className="block">Email: ofis@lebre.com.tr</span>
-              <span className="block">Warsaw, Poland</span>
+              <span className="block">Turkey, Trabzon</span>
             </p>
           </div>
         </div>

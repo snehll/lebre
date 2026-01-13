@@ -38,8 +38,8 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-5xl mx-auto font-light leading-relaxed">
-            Reliable partners and transparent logistics — from Trabzon & Warsaw
-            to the world.
+            Reliable partners and transparent logistics — from Trabzon,
+            Turkey to the world.
           </motion.p>
 
           <motion.div

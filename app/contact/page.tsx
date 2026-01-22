@@ -25,7 +25,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <h2 className="text-4xl font-bold mb-8">Get in Touch</h2>
-              <ContactForm />
+              <ContactForm companyName="lebre" />
             </div>
             <div className="space-y-8">
               <div>

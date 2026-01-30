@@ -15,8 +15,8 @@ export default function UserAgreement() {
 
           <p>
             1.1. This User Agreement (“Agreement”) applies to the website
-            available at <strong>_________</strong> (hereinafter referred to as
-            the “Website”).
+            available at <strong>https://lebre.com.tr</strong> (hereinafter
+            referred to as the “Website”).
           </p>
 
           <p>

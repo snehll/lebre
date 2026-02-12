@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
       <div className="container mx-auto px-6 max-w-4xl">
         <h1 className="text-5xl font-bold mb-8">Privacy Policy</h1>
         <p className="text-muted-foreground mb-8">
-          Last updated on December 16, 2025
+          Last updated on January 01, 2026
         </p>
 
         <div className="prose prose-lg dark:prose-invert space-y-8 text-muted-foreground">
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             This Privacy Policy (hereafter referred to as the “Privacy Policy”)
-            relates to the website <strong>ofis@lebre.com.tr</strong> (hereafter
+            relates to the website <strong>https://lebre.com.tr</strong> (hereafter
             referred to as the “website” or the “site”), the services provided
             by <strong>LEBRE TİCARET LİMİTED ŞİRKETİ</strong> (hereinafter
             referred to as the "Company", the owner and operator of the Site),

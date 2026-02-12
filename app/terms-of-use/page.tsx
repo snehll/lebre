@@ -7,7 +7,7 @@ export default function UserAgreement() {
       <div className="container mx-auto px-6 max-w-4xl">
         <h1 className="text-3xl font-bold mb-8 text-black">User Agreement</h1>
         <p className="text-muted-foreground mb-8">
-          Last updated on October 31, 2025
+          Last updated on January 01, 2026
         </p>
 
         <div className="prose prose-lg dark:prose-invert space-y-8 text-muted-foreground">
@@ -63,8 +63,8 @@ export default function UserAgreement() {
             </li>
 
             <li>
-              2.1.2. “User” means any person who has accepted the offer at{" "}
-              <strong>ofis@lebre.com.tr</strong>.
+              2.1.2. “User” means any person who has accepted the{" "}
+              <strong>https://lebre.com.tr</strong>.
             </li>
 
             <li>
